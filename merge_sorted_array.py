@@ -25,7 +25,7 @@ def mergeArrays(arr1, arr2):
     for i in range(n1 + n2):
         print(str(arr3[i]), end = " ")
 
-		
+# We can also modify this section to take manual array inputs
 arr1 = [1, 3, 5, 7]
 arr2 = [2, 4, 6, 8]
 mergeArrays(arr1, arr2);
