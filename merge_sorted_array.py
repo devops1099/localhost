@@ -1,8 +1,8 @@
 # Code to merge two different sorted arrays
 
 def mergeArrays(arr1, arr2):
-	n1 = len(arr1)
-	n2 = len(arr2)
+    n1 = len(arr1)
+    n2 = len(arr2)
     arr3 = [None] * (n1 + n2)
     i,j,k = 0,0,0
     while i < n1 and j < n2:
