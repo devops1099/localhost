@@ -1,4 +1,21 @@
 # Code to merge two different sorted arrays
+input_str1= input('Enter elements of the first array separated by space: ')
+print("\n")
+arr1 = input_str1.split()  # to convert the input string to list
+
+print('array1: ', arr1)
+
+input_str2= input('Enter elements of the second array separated by space: ')
+print("\n")
+arr2 = input_str2.split()  # to convert the input string to list
+
+print('array2: ', arr2)
+
+for i in range(len(arr1)):  # to convert each element to integer type
+    arr1[i] = int(arr1[i])
+for i in range(len(arr2)):  # to convert each element to integer type
+    arr2[i] = int(arr2[i])
+
 
 def mergeArrays(arr1, arr2):
     n1 = len(arr1)
@@ -25,7 +42,5 @@ def mergeArrays(arr1, arr2):
     for i in range(n1 + n2):
         print(str(arr3[i]), end = " ")
 
-# We can also modify this section to take manual array inputs
-arr1 = [1, 3, 5, 7]
-arr2 = [2, 4, 6, 8]
+
 mergeArrays(arr1, arr2);
